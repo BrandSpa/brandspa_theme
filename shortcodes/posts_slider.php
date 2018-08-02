@@ -17,7 +17,13 @@ function ra_posts_slider_sc( $atts ) {
 		return $item;
 	}, $query->get_posts());
 
-	$props = ['posts' => $posts];
+
+	$postTitles = [];
+	foreach($posts as $post){
+		$postTitles[] = $post['post_title'];
+	}
+
+	$props = ['posts' => $postTitles];
 
 	ob_start();
 	?>

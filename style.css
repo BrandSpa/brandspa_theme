@@ -10,49 +10,49 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 h1 {
-  font-size: 2.7em;
-  line-height: 150%;
-  font-family: 'Gotham Rounded Book';
+  font-size: 2.7em !important;
+  line-height: 150% !important;
+  font-family: 'Gotham Rounded Book' !important;
 }
 
 h2 {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  font-size: 40px;
-  line-height: 50px;
+  margin-top: 10px !important;
+  margin-bottom: 15px !important;
+  font-size: 40px !important;
+  line-height: 50px !important;
 }
 
 h3 {
-  font-size: 1.5em;
-  line-height: 140%;
-  font-family: 'Aktiv Grotesk';
-  font-weight: 900;
+  font-size: 1.5em !important;
+  line-height: 140% !important;
+  font-family: 'Aktiv Grotesk' !important;
+  font-weight: 900 !important;
 }
 
 h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 0.9em;
-  line-height: 150%;
-  font-weight: 500;
-  font-family: 'Gotham Rounded Medium';
-  letter-spacing: 2px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  font-size: 0.9em !important;
+  line-height: 150% !important;
+  font-weight: 500 !important;
+  font-family: 'Gotham Rounded Medium' !important;
+  letter-spacing: 2px !important;
 }
 
 h5 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 100%;
-  line-height: 150%;
-  font-weight: 500;
-  font-family: 'Gotham Rounded Medium';
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  font-size: 100% !important;
+  line-height: 150% !important;
+  font-weight: 500 !important;
+  font-family: 'Gotham Rounded Medium' !important;
 }
 
 h6 {
-  margin-bottom: 10px;
-  font-size: 13px;
-  line-height: 19px;
-  font-family: 'Aktiv Grotesk';
+  margin-bottom: 10px !important;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  font-family: 'Aktiv Grotesk' !important;
 }
 
 p {

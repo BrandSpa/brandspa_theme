@@ -202,11 +202,11 @@ function ra_news_sc( $atts ) {
 }
 
 </style>
-<section class="news col-lg-12">
+<section class="news row">
     <?php 
         foreach($posts as $post){
     ?>
-    <div class="col-lg-4 col-md-6 project-item">
+    <div class="col-lg-4 col-6 project-item">
         <a href="<?php echo esc_url( get_permalink($post->ID) ); ?>" class="project-item">
         <div
 			class="project-item__header"

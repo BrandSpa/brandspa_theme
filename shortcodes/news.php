@@ -22,6 +22,99 @@ function ra_news_sc( $atts ) {
     ob_start();
 ?>
 <style>
+.projects {
+						padding: 0;
+						margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+					}
+					.pagination-btn {
+						float: right;
+						margin: 0 40px 20px 0;
+						color: #039ED8;
+						font-size: 20px;
+					}
+					.pagination-btn span {
+						display: block;
+					}
+          .project-item {
+						padding: 5px;
+					}
+					.empty-value {
+						height: 100px;
+						display: flex;
+						flex: 1;
+						align-items: center;
+					}
+					.empty-value h4 {
+						font-size: 17px;
+						color: #039ED8;
+					}
+					.filters-title {
+						font-size: 15px;
+						color: #039ED8;
+					}
+					.filters {
+						width: 90%;
+						background: #fff;
+						box-shadow: 0 10px 10px rgba(0,0,0,.1);
+						display: flex;
+						flex-direction: column;
+						padding-top: 20px;
+						margin-left: 15px;
+						transition: .3s ease;
+					}
+					.filters--in-bound {
+						position: fixed;
+						left: 0;
+						right: 0;
+						top: 60px;
+						z-index: 100;
+					}
+					.filters__toggle {
+						display: flex;
+						align-self: flex-end;
+						cursor: pointer;
+						border: none;
+						background: transparent;
+						font-size: 15px;
+						color: #039ED8;
+						margin-bottom: 20px;
+						align-items: center;
+						outline: none;
+					}
+					.filters__toggle i {
+						padding: 0 20px;
+					}
+					.filters__toggle--open i::before {
+						transform: rotate(45deg);
+					}
+					.filters-container {
+						display: none;
+					}
+					.filters-container--open {
+						display: block;
+						padding-bottom: 20px;
+					}
+					@media (min-width: 1024px) {
+						.projects {
+							flex-direction: row;
+						}
+						.filters {
+							display: initial;
+							box-shadow: none;
+							background: transparent;
+							padding: 0;
+							margin: 0;
+						}
+						.filters-container {
+							display: block;
+						}
+						.filters__toggle {
+							display: none;
+						}
+					}
 .project-item {
     display: flex;
     flex: 1;

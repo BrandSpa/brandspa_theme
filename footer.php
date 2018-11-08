@@ -56,7 +56,15 @@ if (window.addEventListener) {
 <script>
   var $ = jQuery;
   $(document).ready(function(){
-    $('.project-item').lazy();
+    $('.project-item').lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
   })
 </script>
 

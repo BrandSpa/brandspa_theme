@@ -1,4 +1,7 @@
 <?php 
+
+function ra_news_sc( $atts ) {
+	$at = shortcode_atts([], $atts);
     $query = new Wp_Query(array(
         'post_type' => 'post',
         'posts_per_page' => -1,
@@ -13,6 +16,7 @@
 		return $item;
 	}, $query->get_posts());
 
+    ob_start();
 ?>
 
 <section class="news">
@@ -24,3 +28,9 @@
         }
     ?>
 </section>
+
+<?php
+	return ob_get_clean();
+}
+
+add_shortcode( 'ra_news', 'ra_news_sc' );

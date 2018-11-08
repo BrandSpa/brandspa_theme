@@ -202,13 +202,6 @@ function ra_news_sc( $atts ) {
 
 </style>
 <!-- cdnjs -->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-<script>
-$(function() {
-    $('.project-item').lazy();
-});
-</script>
 <section class="news row">
     <?php 
         foreach($posts as $post){

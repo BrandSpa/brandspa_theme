@@ -20,12 +20,14 @@ include_once 'shortcodes/quo_fixed.php';
 include_once 'shortcodes/contact.php';
 include_once 'shortcodes/posts_slider.php';
 include_once 'shortcodes/image_hover.php';
+include_once 'shortcodes/news.php';
 
 //VISUAL COMPOSER
 include_once 'shortcodes/vc/slider.php';
 include_once 'shortcodes/vc/quo_fixed.php';
 include_once 'shortcodes/vc/contact.php';
 include_once 'shortcodes/vc/quo_fixed.php';
+include_once 'shortcodes/vc/news.php';
 include_once 'shortcodes/vc/posts_slider.php';
 include_once 'shortcodes/vc/image_hover.php';
 

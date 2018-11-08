@@ -16,6 +16,9 @@ function ra_news_sc( $atts ) {
 		return $item;
 	}, $query->get_posts());
 
+    foreach($posts as $post){
+		$post->post_content="";
+	}
     ob_start();
 ?>
 

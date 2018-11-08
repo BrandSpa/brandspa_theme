@@ -117,7 +117,6 @@ function ra_news_sc( $atts ) {
 					}
 .project-item {
     display: flex;
-    flex: 1;
     transition: transform .1s ease-in-out;
     position: relative;
     background: #fff;

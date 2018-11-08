@@ -198,6 +198,9 @@ function ra_news_sc( $atts ) {
     .project__info-country, .project__info-state-city {
         font-size: 15px;
     }
+    .news{
+        padding-top: 50px
+    }
 }
 
 </style>

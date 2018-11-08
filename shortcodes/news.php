@@ -208,11 +208,7 @@ function ra_news_sc( $atts ) {
     ?>
     <div class="col-lg-4 col-6">
         <a href="<?php echo esc_url( get_permalink($post->ID) ); ?>" class="project-item">
-            <div
-                class="project-item__header"
-                style="background: url(<?php echo $post->post_image ?>); background-size: 100%;"
-            ></div>
-
+            <div class="project-item__header" style="background: url(<?php echo $post->post_image ?>); background-size: 100%;"></div>
             <div class="project__info">
                 <span class="project__info-date"><?php echo date("M Y", strtotime($post->post_date));?></span>
                 <div class="miniline"></div>

@@ -30,6 +30,7 @@ include_once 'shortcodes/vc/quo_fixed.php';
 include_once 'shortcodes/vc/news.php';
 include_once 'shortcodes/vc/posts_slider.php';
 include_once 'shortcodes/vc/image_hover.php';
+include_once 'shortcodes/custom/fullpageproject.php';
 
 
 //API
@@ -46,3 +47,11 @@ register_nav_menus(
     'header' => 'Header Nav'
   )
 );
+
+function add_theme_scripts() {
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/util/bootstrap-4/css/bootstrap.min.css', array(), '1.1', 'all');
+  wp_enqueue_style( 'style', get_stylesheet_uri() );
+  wp_enqueue_style( 'fullpageproject', get_template_directory_uri() . '/shortcodes/custom/css/fullpageproject.css', array(), '1.1', 'all');
+ 
+}
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );

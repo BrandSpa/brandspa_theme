@@ -5,7 +5,7 @@
 	<meta name="theme-color" content="#6031ba">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>RentAdvisor</title>
+	<title>BrandSpa</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-grid.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/fonts/aktiv.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/fonts/gotham_rounded.css">
@@ -26,22 +26,12 @@
         }
       }
   </script>
+	
+
 
 </head>
-<body>
-	<script>
-		onLoad(function() {
-			jQuery(window).on('scroll', function(e) {
-				var $header = jQuery('.app-header');
-				if(jQuery(window).scrollTop() > $header.height()) {
-					$header.addClass('app-header--scrolling');
-				} else {
-					$header.removeClass('app-header--scrolling');
-				}
-			});
-		});
-	</script>
-
+<body <?php body_class(); ?>>
+	
 <header class="app-header">
 	<div class="container">
 		<a href="/" class="">

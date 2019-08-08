@@ -1,4 +1,3 @@
-
 <!--wordpress files-->
 <?php wp_footer() ?>
 <!-- /wordpress files-->
@@ -31,25 +30,6 @@ if (window.addEventListener) {
 </script>
 <!--/async load app-->
 
-<!--google rich-->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "url": "https://<?php echo $_SERVER['HTTP_HOST'] ?>",
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "telephone": "+57-031-636-1051",
-    "contactType": "sales",
-    "areaServed": "CO"
-  },{
-    "@type": "ContactPoint",
-    "telephone": "+57-320-636-1051",
-    "contactType": "customer service",
-    "areaServed": "CO"
-  }]
-}
-</script>
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>

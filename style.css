@@ -73,3 +73,14 @@ select{
   padding-left: 5px;
   background: url("/wp-content/uploads/arriba-y-abajo-flechas-pequenas-triangulares.png") right center no-repeat !important;
 }
+
+#logo{
+	max-width: 210px;
+}
+
+body>.container {
+    padding-top: 50px;
+}
+.admin-bar .app-header {
+    margin-top: 32px;
+}

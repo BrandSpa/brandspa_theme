@@ -6,6 +6,17 @@
     background-position: left top !important; 
 }
 
+.fullpage:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: #00FF80;
+    top: 38%;
+    left: 0;
+    position: absolute;
+}
+
 .fullpage .project-info{
     color: #FFF;
 }

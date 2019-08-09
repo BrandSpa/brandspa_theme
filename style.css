@@ -81,3 +81,7 @@ select{
 .admin-bar .app-header {
     margin-top: 32px;
 }
+
+.app-header{
+  position: absolute !important;
+}

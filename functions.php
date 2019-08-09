@@ -41,12 +41,10 @@ include_once 'api/contacts.php';
 include_once 'options/quotations.php';
 include_once 'options/contacts.php';
 
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
 //MENUS
-register_nav_menus(
-  array(
-    'header' => 'Header Nav'
-  )
-);
+
 
 function add_theme_scripts() {
   wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/util/bootstrap-4/css/bootstrap.min.css', array(), '1.1', 'all');
@@ -55,3 +53,42 @@ function add_theme_scripts() {
  
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
+add_filter('nav_menu_css_class', 'add_classes_on_li', 1, 3);
+function add_classes_on_li($classes, $item, $args)
+{
+    $classes[] = 'nav-item';
+
+    return $classes;
+}
+
+add_filter('wp_nav_menu', 'add_classes_on_a');
+function add_classes_on_a($ulclass)
+{
+    return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+}
+
+function brandspa_setup() {
+	
+	add_theme_support( 'custom-logo', array(
+		'height'      => 150,
+		'width'       => 400,
+		'flex-width' => true,
+  ) );
+  
+  register_nav_menus(
+    array(
+      'main-menu' => 'Main Navigation'
+    )
+  );
+
+}
+add_action( 'after_setup_theme', 'brandspa_setup' );
+
+function brandspa_the_custom_logo() {
+	
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+
+}

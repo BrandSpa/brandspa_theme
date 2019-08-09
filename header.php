@@ -33,36 +33,29 @@
 <body <?php body_class(); ?>>
 	
 <header class="app-header">
-	<div class="container">
-		<a href="/" class="">
-			<?php  require('templates/logo.php') ?>
-		</a>
-		<?php if ( is_active_sidebar( 'header_widget' ) ) : ?>
-			<div class="header__widget">
-				<?php dynamic_sidebar( 'header_widget' ); ?>
-			</div><!-- #primary-sidebar -->
-		<?php endif; ?>
-
-			<?php
-				$nav = wp_nav_menu([
-						'theme_location' => 'header',
-						'menu_class' => 'app-header__menu',
-						'menu_id' => '',
-						'container' => false,
-						'echo' => false
-					]);
-
-				echo clean_menu($nav);
-   	 ?>
-
-		 <?php
-		 	$menuProps = [
-				'links' => getMenuArr('header')
-			];
-		 ?>
-
-		 <div class="ra-menu-mobile" data-props='<?php echo json_encode($menuProps) ?>'></div>
+<a href="<?php echo get_site_url(); ?>">
+	<?php 
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+		echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
+	?>
+</a>
+	
+	<div class="navbar">
+	<?php
+		wp_nav_menu(array(
+			'menu'           => 'main-menu',
+			'theme_location' => 'main-menu',
+			'menu_id'        => 'navigation',
+			'depth'          => 3,
+			'container'      => false,
+			'menu_class'     => 'nav',
+			//Process nav menu using our custom nav walker
+			'walker'         => new wp_bootstrap_navwalker()
+		));
+	?>
 	</div>
+	
 </header>
 
 

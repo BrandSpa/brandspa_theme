@@ -134,3 +134,12 @@ select{
   max-width: 100% !important;
   width: 100% !important;
 }
+
+.site-logo{
+  position: fixed;
+  padding-left: 20px;
+}
+
+.navbar{
+  padding-left: 70px;
+}

@@ -89,7 +89,12 @@ class Slider extends WPBakeryShortCode {
                "type" => "colorpicker",
                        "heading" => "Button color",
                        "param_name" => "btn_color"
-             ]
+             ],
+            [
+                "type" => "textfield",
+                "heading" => "Button link",
+                "param_name" => "video_link"
+            ],
         ];
 
         vc_map( 

@@ -18,11 +18,6 @@
                             <li data-depth="0.6">
                                 <img  src="{{slide['model_img']}}" alt="">
                             </li>
-                            <li data-depth="0.9">
-                                <div class="layer-link">
-                                    <a href="">Play this video</a>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>

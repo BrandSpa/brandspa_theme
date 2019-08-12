@@ -28,8 +28,9 @@ function parseSlides($slides) {
 
 function ra_slider_sc( $atts , $content) {
   $at = shortcode_atts( [ 'slides' => '' ], $atts );
-
+  var_dump($at);
 	$slides = parseSlides($at['slides']);
+
 	// $slides = vc_param_group_parse_atts($atts['slides']);
 	$slidesJson = json_encode($slides);
 	$detect = new Mobile_Detect;

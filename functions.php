@@ -31,6 +31,7 @@ include_once 'shortcodes/vc/news.php';
 include_once 'shortcodes/vc/posts_slider.php';
 include_once 'shortcodes/vc/image_hover.php';
 include_once 'shortcodes/custom/fullpageproject.php';
+include_once 'shortcodes/custom/slider.php';
 
 
 //API
@@ -48,8 +49,13 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 function add_theme_scripts() {
   wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/util/bootstrap-4/css/bootstrap.min.css', array(), '1.1', 'all');
+  wp_enqueue_style( 'swipercss', get_template_directory_uri() . '/util/swiper/dist/css/swiper.min.css', array(), '1.1', 'all');
   wp_enqueue_style( 'style', get_stylesheet_uri() );
+  wp_enqueue_script( 'swiper', get_template_directory_uri() . '/util/swiper/dist/js/swiper.min.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'parallax', get_template_directory_uri() . '/util/parallax/src/parallax.min.js', array ( 'swiper' ), 1.1, true);
+  wp_enqueue_script( 'sliderjs', get_template_directory_uri() . '/shortcodes/custom/js/slider.js', array ( 'parallax' ), 1.1, true);
   wp_enqueue_style( 'fullpageproject', get_template_directory_uri() . '/shortcodes/custom/css/fullpageproject.css', array(), '1.1', 'all');
+  wp_enqueue_style( 'slider', get_template_directory_uri() . '/shortcodes/custom/css/slider.css', array(), '1.1', 'all');
  
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );

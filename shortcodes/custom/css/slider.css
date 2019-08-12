@@ -26,7 +26,7 @@
 }
 
 .slide-text{
-    font-size: 6.2rem !important;
+    font-size: 2.7rem !important;
     line-height: 1 !important;
     font-family: 'Spectral Bold', Arial, Helvetica, sans-serif !important;
 }
@@ -140,7 +140,7 @@
 @media screen and (min-width: 720px) {
 
     .slide-text{
-        font-size: 2.7rem !important;
+        font-size: 6.2rem !important;
     }
     .slide-footer{
         display: block;

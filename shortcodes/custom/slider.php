@@ -141,7 +141,7 @@ class Slider extends WPBakeryShortCode {
 
         $at = shortcode_atts( [ 'slides' => '' ], $atts );
         $at = $this->parseSlides($at['slides']);
-        return $this->twig->render('Slider.php', ['slides'=>$at, 'template'=> get_template_directory_uri()]);
+        return $this->twig->render('slider.php', ['slides'=>$at, 'template'=> get_template_directory_uri()]);
 
     }
 

@@ -26,8 +26,9 @@
 }
 
 .slide-text{
-    font-size: 4rem !important;
-    font-family: 'Spectral', Arial, Helvetica, sans-serif;
+    font-size: 4.2rem !important;
+    line-height: 1 !important;
+    font-family: 'Spectral Bold', Arial, Helvetica, sans-serif !important;
 }
 
 .slide-content{
@@ -106,6 +107,7 @@
     top: 55% !important;
     font-size: 12px;
     cursor: pointer;
+    font-family: 'Aktiv Grotesk', Arial, Helvetica, sans-serif
 }
 
 .swiper-wrapper.disabled {

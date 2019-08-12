@@ -28,11 +28,13 @@ jQuery(document).ready(function(){
   if(slider.slides.length == 1) {
     $('.swiper-wrapper').addClass( "disabled" );
     $('.swiper-pagination').addClass( "disabled" );
-
-    $(document).on('scroll', function(e){
-      e.preventDefault()
-    })
   } 
+
+  if($('.fullpage').length > 1) {
+    $(document).on('scrool', function(e){
+      
+    })
+  }
 
   $('.scene-text').click(function(){
     const el = $('.fullpage').first().offset();

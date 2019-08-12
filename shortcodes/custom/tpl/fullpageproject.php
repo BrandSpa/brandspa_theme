@@ -20,7 +20,7 @@ style="{{ (bgimage) ? 'background: url('~bgimage~')' : (bgcolor) ? 'background:'
         </div>
         <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
             {% if logoimage %}
-                <div class="logo col-md-6 col-8">
+                <div class="logo col-md-8 col-8">
                     <img src="{{logoimage}}" alt="{{title}}">
                 </div>
             {% endif %}

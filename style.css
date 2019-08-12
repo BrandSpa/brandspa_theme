@@ -143,3 +143,9 @@ select{
 .navbar{
   padding-left: 70px;
 }
+
+.white-form .wpb_content_element .wpb_wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}

@@ -28,7 +28,8 @@
 }
 
 .fullpage .project-info .project-title{
-    font-size: 58px;
+    font-family: 'Spectral Bold', Arial, Helvetica, sans-serif;
+    font-size: 2.6rem;
     line-height: 1;
 }
 .fullpage .project-info .project-description{
@@ -43,4 +44,11 @@
 }
 .fullpage .logo img{
     max-width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+
+    .fullpage .project-info .project-title{
+        font-size: 4.2rem
+    }
 }

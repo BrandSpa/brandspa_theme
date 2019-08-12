@@ -98,3 +98,9 @@ function brandspa_the_custom_logo() {
 	}
 
 }
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+ }
+ add_filter('upload_mimes', 'cc_mime_types');

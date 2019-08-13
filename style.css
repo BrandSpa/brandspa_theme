@@ -57,45 +57,6 @@ body{
 	padding: 0 !important;
 }
 
-h1 {
-  font-size: 2.7em !important;
-  line-height: 150% !important;
-  font-family: 'Gotham Rounded Book' !important;
-}
-
-h2 {
-  margin-top: 10px !important;
-  margin-bottom: 15px !important;
-  font-size: 40px !important;
-  line-height: 50px !important;
-}
-
-h3 {
-  font-size: 1.5em !important;
-  line-height: 140% !important;
-  font-family: 'Aktiv Grotesk' !important;
-  font-weight: 900 !important;
-}
-
-h4 {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
-  font-size: 0.9em !important;
-  line-height: 150% !important;
-  font-weight: 500 !important;
-  font-family: 'Gotham Rounded Medium' !important;
-  letter-spacing: 2px !important;
-}
-
-h5 {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
-  font-size: 100% !important;
-  line-height: 150% !important;
-  font-weight: 500 !important;
-  font-family: 'Gotham Rounded Medium' !important;
-}
-
 h6 {
   margin-bottom: 10px !important;
   font-size: 13px !important;
@@ -148,7 +109,13 @@ select{
   padding-left: 70px;
 }
 .white-form{
-	background: rgba(0, 255, 128, .3);
+	background: rgba(0, 255, 128, .1);
+}
+.white-form .vc_column-inner{
+	padding-right: 0px !important;
+}
+.white-form div[role='form']{
+	width: 100%;
 }
 .white-form .wpb_content_element{
 	display: flex;
@@ -189,4 +156,32 @@ select{
 
 .white-form .wpb_content_element .wpb_wrapper h1{
 	width: 100%;
+}
+
+.footer-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info .row{
+	width: 100%;
+}
+
+.footer-info .city{
+	font-family: "Spectral", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+.footer-info h2{
+	font-size: 58px;
+	font-family: "Spectral Bold", Arial, Helvetica, sans-serif;
+	margin-bottom: 0;
+}
+
+.footer-info h4, .footer-info .bold-text{
+	font-size: 23px;
+	font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif;
 }

@@ -32,7 +32,7 @@
 </head>
 <body <?php body_class(); ?>>
 	
-<header class="app-header">
+<header class="app-header fade-transparent">
 <a href="<?php echo get_site_url(); ?>">
 <div class="site-logo">
 	<svg width="29px" height="132px" viewBox="0 0 29 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

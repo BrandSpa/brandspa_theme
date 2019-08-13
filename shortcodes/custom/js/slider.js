@@ -45,6 +45,19 @@ jQuery(document).ready(function(){
     });
   });
 
+    //caches a jQuery object containing the header element
+    const header = $(".fade-transparent");
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 200) {
+            header.removeClass('fade-transparent').addClass("fade-background");
+        } else {
+            header.removeClass("fade-background").addClass('fade-transparent');
+            
+        }
+    });
+
   function scenesDisable(){
       for(i=0; i<scenes.length; i++){
           scenes[i].disable();

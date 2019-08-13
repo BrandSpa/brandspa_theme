@@ -75,23 +75,30 @@
 </div>
 
 </a>
-	
-	<div class="navbar">
-		<?php
-			wp_nav_menu(array(
-				'menu'           => 'main-menu',
-				'theme_location' => 'main-menu',
-				'menu_id'        => 'navigation',
-				'depth'          => 3,
-				'container'      => false,
-				'menu_class'     => 'nav',
-				//Process nav menu using our custom nav walker
-				'walker'         => new wp_bootstrap_navwalker()
-			));
-		?>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="navbar">
+			<?php
+				wp_nav_menu(array(
+					'menu'           => 'main-menu',
+					'theme_location' => 'main-menu',
+					'menu_id'        => 'navigation',
+					'depth'          => 3,
+					'container'      => false,
+					'menu_class'     => 'navbar-nav',
+					//Process nav menu using our custom nav walker
+					'walker'         => new wp_bootstrap_navwalker()
+				));
+			?>
+		</div>
 	</div>
+</nav>
 	<?php if ( is_active_sidebar( 'home_menu_widget' ) ) : ?>
-		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<div id="primary-sidebar" class="primary-sidebar widget-area d-none d-lg-block d-xl-blog" role="complementary">
 			<?php dynamic_sidebar( 'home_menu_widget' ); ?>
 		</div><!-- #primary-sidebar -->
 	<?php endif; ?>

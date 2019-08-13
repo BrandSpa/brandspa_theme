@@ -45,7 +45,7 @@
     pointer-events: auto;
 }
 .scene li:first-child{
-    left: 110px;
+    left: 110px !important;
     top: 117px !important;
 }
 

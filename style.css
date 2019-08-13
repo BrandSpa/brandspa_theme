@@ -53,6 +53,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-style: normal;
 }
 
+body{
+	padding: 0 !important;
+}
+
 h1 {
   font-size: 2.7em !important;
   line-height: 150% !important;
@@ -143,9 +147,46 @@ select{
 .navbar{
   padding-left: 70px;
 }
-
+.white-form{
+	background: rgba(0, 255, 128, .3);
+}
+.white-form .wpb_content_element{
+	display: flex;
+	justify-content: flex-end;
+}
 .white-form .wpb_content_element .wpb_wrapper{
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	flex-wrap: wrap;
+	max-width: 60%;
+	color: #000;
+}
+
+.white-form .wpb_content_element .wpb_wrapper input[type=text],
+.white-form .wpb_content_element .wpb_wrapper textarea
+{
+	border-bottom: 1px solid #00FF80;
+	margin-bottom: 15px;
+	color: #000;
+	font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
+}
+
+.white-form .wpb_content_element .wpb_wrapper input[type=text]::placeholder,
+.white-form .wpb_content_element .wpb_wrapper textarea::placeholder,
+.white-form .wpb_content_element .wpb_wrapper input[type=submit]{
+	color: #000;
+	font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
+}
+
+.white-form .wpb_content_element .wpb_wrapper input[type=submit]{
+	text-align: left;
+	border: none;
+}
+
+.white-form .wpb_content_element .wpb_wrapper textarea{
+	height: 100px;
+}
+
+.white-form .wpb_content_element .wpb_wrapper h1{
+	width: 100%;
 }

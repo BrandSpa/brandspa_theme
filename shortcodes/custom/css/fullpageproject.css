@@ -26,6 +26,7 @@
     font-family: 'Spectral', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 12px;
+    letter-spacing: 3px;
 }
 
 .fullpage .project-info .project-title{

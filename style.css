@@ -63,6 +63,16 @@ header{
 	justify-content: space-between;
 }
 
+.navbar{
+	display: flex;
+    justify-content: flex-end;
+}
+.navbar-collapse{
+	background: #fff;
+}
+.navbar-toggler:focus{
+	outline: 0;
+}
 h6 {
   margin-bottom: 10px !important;
   font-size: 13px !important;
@@ -98,7 +108,8 @@ select{
 }
 
 .app-header{
-  position: absolute !important;
+  position: fixed !important;
+  z-index: 99
 }
 
 .container{
@@ -106,10 +117,33 @@ select{
   width: 100% !important;
 }
 
-.site-logo{
+.fade-transparent .site-logo{
   	position: fixed;
   	padding-left: 20px;
 	padding-bottom: 40px;
+	-webkit-transition: all 3s;
+    transition: all 3s;
+}
+
+.fade-background .site-logo{
+	top: 130px;
+	-webkit-transition: all 3s;
+    transition: all 3s;
+}
+
+.fade-background {
+      background-color: #FFF;
+      -webkit-transition: background-color 3s;
+    transition: background-color 3s;
+}
+
+.fade-transparent {
+
+      background-color: transparent;
+
+      -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+
 }
 
 .site-logo:after{
@@ -123,10 +157,6 @@ select{
 	background: #00FF80;
 }
 
-.navbar{
-  padding-left: 70px;
-  padding-right: 70px;
-}
 
 .white-form{
 	background: rgba(0, 255, 128, .1);
@@ -232,7 +262,11 @@ select{
 	padding-top: 0px;
 	font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
 }
-
+#navigation{
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 70px;
+}
 #navigation li a{
 	color: #000;
 	font-family: "Spectral", Arial, Helvetica, sans-serif;
@@ -273,5 +307,14 @@ select{
 	}
 	.footer-footer-info h2{
 		font-size: 58px;
+	}
+}
+
+@media (min-width: 992px) { 
+	.navbar-collapse{
+		background: transparent;
+	}
+	.navbar{
+		justify-content: flex-end;
 	}
 }

@@ -57,6 +57,12 @@ body{
 	padding: 0 !important;
 }
 
+header{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
 h6 {
   margin-bottom: 10px !important;
   font-size: 13px !important;
@@ -119,6 +125,7 @@ select{
 
 .navbar{
   padding-left: 70px;
+  padding-right: 70px;
 }
 
 .white-form{
@@ -220,6 +227,16 @@ select{
 	background: url(shortcodes/custom/images/arrow-diagonal.png);
 }
 
+.primary-sidebar{
+	padding: 20px;
+	padding-top: 0px;
+	font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif;
+}
+
+#navigation li a{
+	color: #000;
+	font-family: "Spectral", Arial, Helvetica, sans-serif;
+}
 
 @media screen and (min-width: 768px) {
 	.white-form .wpb_content_element{

@@ -104,3 +104,14 @@ function cc_mime_types($mimes) {
   return $mimes;
  }
  add_filter('upload_mimes', 'cc_mime_types');
+
+ function brandspa_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home Menu Widget',
+		'id'            => 'home_menu_widget',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>'
+	) );
+}
+add_action( 'widgets_init', 'brandspa_widgets_init' );

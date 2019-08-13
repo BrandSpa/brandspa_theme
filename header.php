@@ -90,7 +90,11 @@
 			));
 		?>
 	</div>
-	
+	<?php if ( is_active_sidebar( 'home_menu_widget' ) ) : ?>
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+			<?php dynamic_sidebar( 'home_menu_widget' ); ?>
+		</div><!-- #primary-sidebar -->
+	<?php endif; ?>
 </header>
 
 

@@ -45,34 +45,3 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 </div>
-
-
-<div class="w-100 footer-info">
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-8 city mb-4">BOGOTÁ DC</div>
-        <div class="col-4 arrow-diagonal"></div>
-        <div class="col-8 mb-4">
-            <h2>Colombia</h2>
-            <h4>+57 (1) 4571500</h4>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-8 city mb-4">LAS VEGAS NV</div>
-        <div class="col-4 arrow-diagonal"></div>
-        <div class="col-8 mb-4">
-            <h2>USA</h2>
-            <h4>+1 (702) 5332442</h4>
-        </div>
-    </div>
-
-    <div class="row bold-text">
-        <div class="col-4"></div>
-        <div class="col-8">contact@brandspa.com</div>
-        <div class="col-4"></div>
-        <div class="col-8">WhatsApp</div>
-    </div>
-</div>
-

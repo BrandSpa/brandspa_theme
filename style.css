@@ -230,12 +230,26 @@ select{
 .primary-sidebar{
 	padding: 20px;
 	padding-top: 0px;
-	font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif;
+	font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
 }
 
 #navigation li a{
 	color: #000;
 	font-family: "Spectral", Arial, Helvetica, sans-serif;
+	letter-spacing: 3px;
+}
+
+.primary-sidebar div{
+	margin: 0;
+}
+.primary-sidebar h4{
+	font-size: 13px;
+	font-weight: bold;
+	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
+}
+.primary-sidebar h5{
+	font-size: 11px;
+	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
 }
 
 @media screen and (min-width: 768px) {

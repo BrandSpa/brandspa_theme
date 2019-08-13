@@ -45,8 +45,12 @@
     pointer-events: auto;
 }
 .scene li:first-child{
-    right: 100px;
-    top: 100px !important;
+    left: 110px;
+    top: 117px !important;
+}
+
+.scene li:nth-child(2) {
+    mix-blend-mode: multiply;
 }
 
 .scene li:nth-child(3){

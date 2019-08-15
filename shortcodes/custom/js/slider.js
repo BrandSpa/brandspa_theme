@@ -40,7 +40,6 @@ jQuery(document).ready(function(){
   });
 
     //caches a jQuery object containing the header element
-    const header = $(".fade-transparent");
 
   function scenesDisable(){
       for(i=0; i<scenes.length; i++){

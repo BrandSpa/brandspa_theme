@@ -65,7 +65,6 @@ header{
 
 .navbar{
 	display: flex;
-    justify-content: flex-end;
 }
 .navbar-collapse{
 	background: #fff;
@@ -116,33 +115,38 @@ select{
   max-width: 100% !important;
   width: 100% !important;
 }
-
-.fade-transparent .site-logo{
-  	position: fixed;
-  	padding-left: 20px;
+.logo{
+	padding-left: 20px;
 	padding-bottom: 40px;
-	-webkit-transition: all 3s;
-    transition: all 3s;
+}
+.logo{
+	top: 110%;
+	position: absolute;
+	-webkit-transition: top .5s;
+    transition: top .5s;
 }
 
-.fade-background .site-logo{
-	top: 130px;
-	-webkit-transition: all 3s;
-    transition: all 3s;
+.site-logo{
+	padding-bottom: 20px;
+}
+.fade-background .logo{
+	top: 110%;
+	-webkit-transition: all .5s;
+    transition: all .5s;
 }
 
 .fade-background {
       background-color: #FFF;
-      -webkit-transition: background-color 3s;
-    transition: background-color 3s;
+      -webkit-transition: background-color .5s;
+    transition: background-color .5s;
 }
 
 .fade-transparent {
 
       background-color: transparent;
 
-      -webkit-transition: background-color 1s;
-    transition: background-color 1s;
+      -webkit-transition: background-color .5s;
+    transition: background-color .5s;
 
 }
 
@@ -267,6 +271,9 @@ select{
 	padding-left: 70px;
 	padding-right: 70px;
 }
+#navigation li{
+	padding: 0 20px;
+}
 #navigation li a{
 	color: #000;
 	font-family: "Spectral", Arial, Helvetica, sans-serif;
@@ -285,6 +292,51 @@ select{
 	font-size: 11px;
 	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
 }
+
+li.lang-item.lang-item-3.lang-item-en.current-lang a{
+	color: #000000 !important;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
+	text-decoration: none;
+}
+
+li.lang-item.lang-item-6.lang-item-es.lang-item-first a{
+	color: #000000 !important;
+	font-size: 13px !important;
+	font-weight: bold;
+	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
+	text-decoration: none;
+}
+
+li.lang-item.lang-item-3.lang-item-en a {
+    color: #000000 !important;
+	text-decoration: none;
+}
+
+li.lang-item.lang-item-3.lang-item-en {
+    color: #000000 !important;
+	text-decoration: none;
+	margin-top: -5px;
+}
+
+li.lang-item.lang-item-6.lang-item-es.lang-item-first.no-translation {
+    display: none;
+}
+
+li.lang-item.lang-item-6.lang-item-es.lang-item-first {
+    display: none;
+}
+
+.primary-sidebar {
+    padding: 20px;
+    padding-top: 0px;
+    font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
+    overflow: hidden;
+    display: flex !important;
+	text-align:right !important;
+}
+
 
 @media screen and (min-width: 768px) {
 	.white-form .wpb_content_element{
@@ -316,5 +368,8 @@ select{
 	}
 	.navbar{
 		justify-content: flex-end;
+	}
+	.logo{
+		top: 30px;
 	}
 }

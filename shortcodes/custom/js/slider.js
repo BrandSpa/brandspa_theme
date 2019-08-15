@@ -30,12 +30,6 @@ jQuery(document).ready(function(){
     $('.swiper-pagination').addClass( "disabled" );
   } 
 
-  if($('.fullpage').length > 1) {
-    $(document).on('scrool', function(e){
-      
-    })
-  }
-
   $('.scene-text').click(function(){
     const el = $('.fullpage').first().offset();
     window.scroll({
@@ -47,16 +41,6 @@ jQuery(document).ready(function(){
 
     //caches a jQuery object containing the header element
     const header = $(".fade-transparent");
-
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 200) {
-            header.removeClass('fade-transparent').addClass("fade-background");
-        } else {
-            header.removeClass("fade-background").addClass('fade-transparent');
-            
-        }
-    });
 
   function scenesDisable(){
       for(i=0; i<scenes.length; i++){

@@ -8,6 +8,6 @@
   <?php else : ?>
     <h1>404</h1>
   <?php endif; ?>
+  <?php get_footer() ?>
 </div>
 
-<?php get_footer() ?>

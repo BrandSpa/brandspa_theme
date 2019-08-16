@@ -30,8 +30,8 @@
 
             $pages = [];
             foreach($posts as $post){
-                $pages[$post->ID] = $post->post_name;
-            }
+                $pages[$post->post_title] = $post->ID;
+			}
 	         
 	        // Map the block with vc_map()
 	        vc_map( 
@@ -167,8 +167,8 @@
 	                $atts
 	            )
 			);
-		
-	
+
+			$atts['lang'] = get_locale();
 			$atts['bgimage'] = array_key_exists('bgimage', $atts) ? wp_get_attachment_image_src($atts['bgimage'], 'full')[0]: '';
 			$atts['logoimage'] = array_key_exists('logoimage', $atts) ? wp_get_attachment_image_src($atts['logoimage'], 'full')[0] : '';
 			$atts['project'] = array_key_exists('project', $atts) ? get_post_permalink($atts['project']) : '';

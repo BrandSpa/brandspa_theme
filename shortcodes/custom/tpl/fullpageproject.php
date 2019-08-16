@@ -14,7 +14,13 @@ style="{{ (bgimage) ? 'background: url('~bgimage~')' : (bgcolor) ? 'background:'
                     {{description | raw }}
                 </div>
                 <div class="w-100 project-link pb-5">
-                    <a style="{{ (textcolor) ? 'color:'~textcolor: '' }}" href="{{ project }}">Ver proyecto</a>
+                    <a style="{{ (textcolor) ? 'color:'~textcolor: '' }}" href="{{ project }}">
+                        {% if lang == 'es_CO' %}
+                            Ver más
+                        {% else %}
+                            View more
+                        {% endif %}
+                    </a>
                 </div>
             </div>
         </div>

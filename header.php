@@ -89,18 +89,22 @@
 					'menu_id'        => 'navigation',
 					'depth'          => 3,
 					'container'      => false,
-					'menu_class'     => 'navbar-nav',
+					'menu_class'     => 'navbar-nav navigation',
 					//Process nav menu using our custom nav walker
 					'walker'         => new wp_bootstrap_navwalker()
 				));
 			?>
 		</div>
-
-		<?php if ( is_active_sidebar( 'home_menu_widget' ) ) : ?>
-			<div id="primary-sidebar" class="primary-sidebar widget-area d-none d-lg-block d-xl-blog" role="complementary">
-				<?php dynamic_sidebar( 'home_menu_widget' ); ?>
-			</div><!-- #primary-sidebar -->
-		<?php endif; ?>
+		<ul class="navbar-nav navigation-widget">
+			<li>
+				<?php if ( is_active_sidebar( 'home_menu_widget' ) ) : ?>
+					<div id="primary-sidebar" class="primary-sidebar widget-area d-none d-lg-block d-xl-blog" role="complementary">
+						<?php dynamic_sidebar( 'home_menu_widget' ); ?>
+					</div><!-- #primary-sidebar -->
+				<?php endif; ?>
+			</li>
+		</ul>
+		
 	</div>
 </nav>
 </header>

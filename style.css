@@ -52,6 +52,59 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	font-weight: normal;
 	font-style: normal;
   }
+
+
+h1{
+	font-family: "Spectral Bold", Arial, Helvetica, sans-serif;
+	font-size: 82.2px;
+	color: #222222;
+	letter-spacing: 0;
+	line-height: 76px;
+}
+
+h2{
+	font-family: "Spectral Bold", Arial, Helvetica, sans-serif;
+	font-size: 42px;
+	color: #000000;
+	letter-spacing: 0;
+	line-height: 45px;
+}
+
+h3{
+	font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
+	font-size: 23px;
+	color: #000000;
+	letter-spacing: 0;
+	line-height: 62px;
+}
+
+h4{
+	font-family: "Spectral Bold", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #222222;
+	letter-spacing: 3.43px;
+}
+
+h5{
+	font-family: "Spectral", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #222222;
+	letter-spacing: 3.43px;
+}
+
+h6{
+	font-family: "Spectral", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	letter-spacing: 3.43px;
+}
+
+p{
+	font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	line-height: 26px;
+}
   
   body{
 	  padding: 0 !important;
@@ -272,30 +325,37 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	  font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
   }
   
-  #navigation{
+  .navigation{
 	  width: 100%;
 	  padding-left: 70px;
 	  padding-right: 70px;
   }
-  #navigation li{
+  .navigation li{
 	  padding: 0 20px;
   }
-  #navigation li a{
+  .navigation li a{
 	  color: #000;
 	  font-family: "Spectral", Arial, Helvetica, sans-serif;
 	  letter-spacing: 3px;
+	  font-size: 12px;
   }
+
+	.navigation-widget {
+		padding-left: 85px
+	}
   
   .primary-sidebar div{
 	  margin: 0;
   }
   .primary-sidebar h4{
-	  font-size: 13px;
+	  font-size: 14px;
 	  font-weight: bold;
+	  letter-spacing: 0.93px;
 	  font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
   }
   .primary-sidebar h5{
-	  font-size: 11px;
+	  font-size: 9px;
+	  letter-spacing: 0.93px;
 	  font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
   }
   
@@ -348,11 +408,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	  padding: 20px;
 	  padding-top: 0px;
 	  font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
-	  overflow: hidden;
-	  display: flex !important;
-	  text-align:right !important;
+	  display: block !important;
+	  text-align: left !important;
+	  min-width: 280px;
   }
-  
+.primary-sidebar ul{
+	padding: 0;
+	padding-top: 12px;
+}
   
   @media screen and (min-width: 768px) {
 	  .white-form .wpb_content_element{
@@ -387,6 +450,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	  }
 	  header .logo{
 		  top: 30px;
+	  }
+	  .primary-sidebar {
+		  display: flex !important;
+		  text-align: right !important;
+	  }
+	  .primary-sidebar ul{
+		padding: 15px;
+		padding-top: 0;
+	  }
+	  
+	  .navigation-widget{
+		  padding-left: 0px;
 	  }
   }
   

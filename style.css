@@ -10,472 +10,474 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @font-face {
-  font-family: 'Spectral';
-  src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.eot');
-  src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.eot?#iefix') format('embedded-opentype'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.woff2') format('woff2'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.woff') format('woff'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Spectral Bold';
-  src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.eot');
-  src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.woff2') format('woff2'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.woff') format('woff'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Aktiv Grotesk Bold';
-  src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.eot');
-  src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.woff2') format('woff2'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.woff') format('woff'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Aktiv Grotesk';
-  src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.eot');
-  src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.woff2') format('woff2'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.woff') format('woff'),
-      url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body{
-	padding: 0 !important;
-}
-
-header{
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
-}
-
-.navbar{
-	display: flex;
-}
-.navbar-collapse{
-	background: #fff;
-}
-.navbar-toggler:focus{
-	outline: 0;
-}
-h6 {
-  margin-bottom: 10px !important;
-  font-size: 13px !important;
-  line-height: 19px !important;
-  font-family: 'Aktiv Grotesk' !important;
-}
-
-p {
-  font-family: 'Aktiv Grotesk';
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 155%;
-}
-
-a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-select{
- -webkit-appearance: none;
-  padding-left: 5px;
-  background: url("/wp-content/uploads/arriba-y-abajo-flechas-pequenas-triangulares.png") right center no-repeat !important;
-}
-
-#logo{
-	max-width: 210px;
-}
-
-.admin-bar .app-header {
-    margin-top: 32px;
-}
-
-.app-header{
-  position: fixed !important;
-  z-index: 99
-}
-
-.container{
-  max-width: 100% !important;
-  width: 100% !important;
-}
-header .logo{
-	top: 110%;
-	padding-left: 20px;
-	padding-bottom: 40px;
-	z-index: 100;
-	position: absolute;
-	-webkit-transition: top .5s;
-    transition: top .5s;
-}
-
-.site-logo{
-	padding-bottom: 20px;
-}
-.fade-background .logo{
-	top: 110%;
-	-webkit-transition: all .5s;
-    transition: all .5s;
-}
-
-.fade-background {
-      background-color: #FFF;
-      -webkit-transition: background-color .5s;
-    transition: background-color .5s;
-}
-
-.fade-transparent {
-
-      background-color: transparent;
-
-      -webkit-transition: background-color .5s;
-    transition: background-color .5s;
-
-}
-
-.site-logo:after{
-	content: "";
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100px;
-	height: 1px;
-	background: #00FF80;
-}
-
-
-.white-form{
-	background: rgba(0, 255, 128, .1);
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-}
-
-.white-form h1{
-	font-size: 82px;
-	font-family: "Spectral Bold", Arial, Helvetica, sans-serif;
-	line-height:76px;
-	margin-bottom: 80px;
-}
-
-.white-form div[role='form']{
-	width: 100%;
-}
-
-.white-form .wpb_content_element{
-	display: flex;
-	justify-content: flex-start;
-}
-
-.white-form .wpb_content_element .wpb_wrapper{
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	max-width: 100%;
-	color: #000;
-}
-
-.white-form .wpb_content_element .wpb_wrapper input[type=text],
-.white-form .wpb_content_element .wpb_wrapper textarea
-{
-	border-bottom: 1px solid #00FF80;
-	margin-bottom: 15px;
-	color: #000;
-	font-size: 23px;
-	font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
-	padding-bottom: 15px;
-    margin-bottom: 30px;
-}
-
-.white-form .wpb_content_element .wpb_wrapper input[type=text]::placeholder,
-.white-form .wpb_content_element .wpb_wrapper textarea::placeholder,
-.white-form .wpb_content_element .wpb_wrapper input[type=submit]{
-	color: #000;
-	font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
-}
-
-.white-form .wpb_content_element .wpb_wrapper input[type=submit]{
-	text-align: left;
-	border: none;
-	font-size: 23px;
-	font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
-}
-
-.white-form .wpb_content_element .wpb_wrapper textarea{
-	height: 100px;
-}
-
-.white-form .wpb_content_element .wpb_wrapper h1{
-	width: 100%;
-}
-
-.footer-footer-info {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-}
-
-.footer-footer-info .row{
-	width: 100%;
-}
-
-.footer-footer-info .city{
-	font-family: "Spectral", Arial, Helvetica, sans-serif;
-	font-size: 20px;
-}
-
-.footer-footer-info h2{
-	font-size: 38px;
-	font-family: "Spectral Bold", Arial, Helvetica, sans-serif;
-	margin-bottom: 0;
-}
-
-.footer-footer-info h4, .footer-footer-info .bold-text{
-	font-size: 17px;
-	font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif;
-}
-
-.whatsapp-movil, .whatsapp-web{
-	color: #000;
-	font-size: 23px;
-	font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif;
-}
-.footer-footer-info .arrow-diagonal{
-	background: url(shortcodes/custom/images/arrow-diagonal.png);
-}
-
-.primary-sidebar{
-	padding: 20px;
-	padding-top: 0px;
-	font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
-}
-
-#navigation{
-	width: 100%;
-	padding-left: 70px;
-	padding-right: 70px;
-}
-#navigation li{
-	padding: 0 20px;
-}
-#navigation li a{
-	color: #000;
-	font-family: "Spectral", Arial, Helvetica, sans-serif;
-	letter-spacing: 3px;
-}
-
-.primary-sidebar div{
-	margin: 0;
-}
-.primary-sidebar h4{
-	font-size: 13px;
+	font-family: 'Spectral';
+	src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.eot');
+	src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.eot?#iefix') format('embedded-opentype'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.woff2') format('woff2'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.woff') format('woff'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: 'Spectral Bold';
+	src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.eot');
+	src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.woff2') format('woff2'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.woff') format('woff'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/Spectral-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: 'Aktiv Grotesk Bold';
+	src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.eot');
+	src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.woff2') format('woff2'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.woff') format('woff'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Bold.ttf') format('truetype');
 	font-weight: bold;
-	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
-}
-.primary-sidebar h5{
-	font-size: 11px;
-	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
-}
-
-li.lang-item.lang-item-3.lang-item-en.current-lang a{
-	color: #000000 !important;
-	font-size: 13px;
-	font-weight: bold;
-	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: 'Aktiv Grotesk';
+	src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.eot');
+	src: url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.woff2') format('woff2'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.woff') format('woff'),
+		url('https://brandspa.com/wp-content/themes/brandspa/fonts/AktivGrotesk-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  body{
+	  padding: 0 !important;
+  }
+  
+  header{
+	  display: flex;
+	  align-items: flex-start;
+	  justify-content: space-between;
+  }
+  
+  .navbar{
+	  display: flex;
+	  width: 100%;
+  }
+  .navbar-collapse{
+	  background: #fff;
+  }
+  .navbar-toggler:focus{
+	  outline: 0;
+  }
+  h6 {
+	margin-bottom: 10px !important;
+	font-size: 13px !important;
+	line-height: 19px !important;
+	font-family: 'Aktiv Grotesk' !important;
+  }
+  
+  p {
+	font-family: 'Aktiv Grotesk';
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 155%;
+  }
+  
+  a {
 	text-decoration: none;
-}
-
-li.lang-item.lang-item-6.lang-item-es.lang-item-first a{
-	color: #000000 !important;
-	font-size: 13px !important;
-	font-weight: bold;
-	font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
-	text-decoration: none;
-}
-
-li.lang-item.lang-item-3.lang-item-en a {
-    color: #000000 !important;
-	text-decoration: none;
-}
-
-li.lang-item.lang-item-3.lang-item-en {
-    color: #000000 !important;
-	text-decoration: none;
-	margin-top: -5px;
-}
-
-li.lang-item.lang-item-3.lang-item-en {
-    color: #000000 !important;
-	text-decoration: none;
-	margin-top: -5px;
-}
-
-li.lang-item.lang-item-6.lang-item-es.lang-item-first {
-    margin-top: -5px;
-}
-
-/*li.lang-item.lang-item-6.lang-item-es.lang-item-first.no-translation {
-    display: none;
-}
-
-li.lang-item.lang-item-6.lang-item-es.lang-item-first {
-    display: none;
-}*/
-
-.primary-sidebar {
-    padding: 20px;
-    padding-top: 0px;
-    font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
-    overflow: hidden;
-    display: flex !important;
-	text-align:right !important;
-}
-
-
-@media screen and (min-width: 768px) {
-	.white-form .wpb_content_element{
-		justify-content: flex-end;
-	}
-	
-	.white-form .wpb_content_element .wpb_wrapper {
-		max-width: 80%; /*Editado por Danilo*/
-	}
-	
-	.white-form .vc_column-inner{
-		padding-right: 0px !important;
-	}
-	.white-form, .footer-footer-info{
-		padding-top: 10rem;
-		padding-bottom: 5rem; /*Editado por Danilo*/
-	}
-	.footer-footer-info h4, .footer-footer-info .bold-text{
-		font-size: 23px;
-	}
-	.footer-footer-info h2{
-		font-size: 58px;
-	}
-}
-
-@media (min-width: 992px) { 
-	.navbar-collapse{
-		background: transparent;
-	}
-	.navbar{
-		justify-content: flex-end;
-	}
-	header .logo{
-		top: 30px;
-	}
-}
-
-/*Editado por Danilo*/
-
-@media screen and (max-width: 767px) {
-	.white-form .wpb_content_element{
-		justify-content: flex-end;
-	}
-	
-	.white-form .wpb_content_element .wpb_wrapper {
-		max-width: 75%;
-	}
-	
-	.white-form .vc_column-inner{
-		padding-right: 0px !important;
-	}
-	.white-form, .footer-footer-info{
-		padding-top: 10rem;
-		padding-bottom: 5rem;
-	}
-	.footer-footer-info h4, .footer-footer-info .bold-text{
-		font-size: 23px;
-	}
-	.footer-footer-info h2{
-		font-size: 58px;
-	}
-}
-
-/*Editado por Danilo*/
-
-@media screen and (max-width: 425px) {
-	
-	.white-form .wpb_content_element .wpb_wrapper {
-		max-width: 75%;
-	}
-	
-	.w-100.footer-footer-info {
-		width: 90% !important;
-	}
-	
-	.white-form h1 {
-		font-size: 3.6rem;
-	}
-	
-	.white-form .wpb_content_element .wpb_wrapper input[type=text], .white-form .wpb_content_element .wpb_wrapper textarea {
-		font-size: 16px;
-	}
-	
-	.white-form .wpb_content_element .wpb_wrapper input[type=submit] {
-		font-size: 20px;
-	}
-	
-	.footer-footer-info h2 {
-		font-size: 2.6em;
-	}
-	
-	.footer-footer-info h4, .footer-footer-info .bold-text {
-		font-size: 16px;
-	}
-}
-
-/*Editado por Danilo*/
-
-@media screen and (max-width: 320px) {
-	
-	.white-form .wpb_content_element .wpb_wrapper {
-		max-width: 75%;
-	}
-	
-	.w-100.footer-footer-info {
-		width: 50% !important;
-	}
-}
-
-@media (max-width:768px){
-	.whatsapp-movil{
-		display:inline;
-	}
-	.whatsapp-web{
-		display:none;
-	}
-}
-
-@media (min-width:768px){
-	.whatsapp-movil{
-		display:none;
-	}
-	.whatsapp-web{
-		display:inline;
-	}
-}
-
+	font-size: 14px;
+	font-weight: 300;
+  }
+  
+  select{
+   -webkit-appearance: none;
+	padding-left: 5px;
+	background: url("/wp-content/uploads/arriba-y-abajo-flechas-pequenas-triangulares.png") right center no-repeat !important;
+  }
+  
+  #logo{
+	  max-width: 210px;
+  }
+  
+  .admin-bar .app-header {
+	  margin-top: 32px;
+  }
+  
+  .app-header{
+	position: fixed !important;
+	z-index: 99
+  }
+  
+  .container{
+	max-width: 100% !important;
+	width: 100% !important;
+  }
+  header .logo{
+	  top: 110%;
+	  padding-left: 20px;
+	  padding-bottom: 40px;
+	  z-index: 100;
+	  position: absolute;
+	  -webkit-transition: top .5s;
+	  transition: top .5s;
+  }
+  
+  .site-logo{
+	  padding-bottom: 20px;
+  }
+  .fade-background .logo{
+	  top: 110%;
+	  -webkit-transition: all .5s;
+	  transition: all .5s;
+  }
+  
+  .fade-background {
+		background-color: #FFF;
+		-webkit-transition: background-color .5s;
+	  transition: background-color .5s;
+  }
+  
+  .fade-transparent {
+  
+		background-color: transparent;
+  
+		-webkit-transition: background-color .5s;
+	  transition: background-color .5s;
+  
+  }
+  
+  .site-logo:after{
+	  content: "";
+	  display: block;
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100px;
+	  height: 1px;
+	  background: #00FF80;
+  }
+  
+  
+  .white-form{
+	  background: rgba(0, 255, 128, .1);
+	  padding-top: 5rem;
+	  padding-bottom: 5rem;
+  }
+  
+  .white-form h1{
+	  font-size: 82px;
+	  font-family: "Spectral Bold", Arial, Helvetica, sans-serif;
+	  line-height:76px;
+	  margin-bottom: 80px;
+  }
+  
+  .white-form div[role='form']{
+	  width: 100%;
+  }
+  
+  .white-form .wpb_content_element{
+	  display: flex;
+	  justify-content: flex-start;
+  }
+  
+  .white-form .wpb_content_element .wpb_wrapper{
+	  display: flex;
+	  align-items: center;
+	  flex-wrap: wrap;
+	  max-width: 100%;
+	  color: #000;
+  }
+  
+  .white-form .wpb_content_element .wpb_wrapper input[type=text],
+  .white-form .wpb_content_element .wpb_wrapper textarea
+  {
+	  border-bottom: 1px solid #00FF80;
+	  margin-bottom: 15px;
+	  color: #000;
+	  font-size: 23px;
+	  font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
+	  padding-bottom: 15px;
+	  margin-bottom: 30px;
+  }
+  
+  .white-form .wpb_content_element .wpb_wrapper input[type=text]::placeholder,
+  .white-form .wpb_content_element .wpb_wrapper textarea::placeholder,
+  .white-form .wpb_content_element .wpb_wrapper input[type=submit]{
+	  color: #000;
+	  font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
+  }
+  
+  .white-form .wpb_content_element .wpb_wrapper input[type=submit]{
+	  text-align: left;
+	  border: none;
+	  font-size: 23px;
+	  font-family: 'Aktiv Grotesk Bold', Arial, Helvetica, sans-serif;
+  }
+  
+  .white-form .wpb_content_element .wpb_wrapper textarea{
+	  height: 100px;
+  }
+  
+  .white-form .wpb_content_element .wpb_wrapper h1{
+	  width: 100%;
+  }
+  
+  .footer-footer-info {
+	  width: 100%;
+	  display: flex;
+	  flex-wrap: wrap;
+	  height: 100%;
+	  justify-content: center;
+	  align-items: center;
+	  padding-top: 5rem;
+	  padding-bottom: 5rem;
+  }
+  
+  .footer-footer-info .row{
+	  width: 100%;
+  }
+  
+  .footer-footer-info .city{
+	  font-family: "Spectral", Arial, Helvetica, sans-serif;
+	  font-size: 20px;
+  }
+  
+  .footer-footer-info h2{
+	  font-size: 38px;
+	  font-family: "Spectral Bold", Arial, Helvetica, sans-serif;
+	  margin-bottom: 0;
+  }
+  
+  .footer-footer-info h4, .footer-footer-info .bold-text{
+	  font-size: 17px;
+	  font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif;
+  }
+  
+  .whatsapp-movil, .whatsapp-web{
+	  color: #000;
+	  font-size: 23px;
+	  font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif;
+  }
+  .footer-footer-info .arrow-diagonal{
+	  background: url(shortcodes/custom/images/arrow-diagonal.png);
+  }
+  
+  .primary-sidebar{
+	  padding: 20px;
+	  padding-top: 0px;
+	  font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
+  }
+  
+  #navigation{
+	  width: 100%;
+	  padding-left: 70px;
+	  padding-right: 70px;
+  }
+  #navigation li{
+	  padding: 0 20px;
+  }
+  #navigation li a{
+	  color: #000;
+	  font-family: "Spectral", Arial, Helvetica, sans-serif;
+	  letter-spacing: 3px;
+  }
+  
+  .primary-sidebar div{
+	  margin: 0;
+  }
+  .primary-sidebar h4{
+	  font-size: 13px;
+	  font-weight: bold;
+	  font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
+  }
+  .primary-sidebar h5{
+	  font-size: 11px;
+	  font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
+  }
+  
+  li.lang-item.lang-item-3.lang-item-en.current-lang a{
+	  color: #000000 !important;
+	  font-size: 13px;
+	  font-weight: bold;
+	  font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
+	  text-decoration: none;
+  }
+  
+  li.lang-item.lang-item-6.lang-item-es.lang-item-first a{
+	  color: #000000 !important;
+	  font-size: 13px !important;
+	  font-weight: bold;
+	  font-family: "Aktiv Grotesk", Arial, Helvetica, sans-serif !important;
+	  text-decoration: none;
+  }
+  
+  li.lang-item.lang-item-3.lang-item-en a {
+	  color: #000000 !important;
+	  text-decoration: none;
+  }
+  
+  li.lang-item.lang-item-3.lang-item-en {
+	  color: #000000 !important;
+	  text-decoration: none;
+	  margin-top: -5px;
+  }
+  
+  li.lang-item.lang-item-3.lang-item-en {
+	  color: #000000 !important;
+	  text-decoration: none;
+	  margin-top: -5px;
+  }
+  
+  li.lang-item.lang-item-6.lang-item-es.lang-item-first {
+	  margin-top: -5px;
+  }
+  
+  /*li.lang-item.lang-item-6.lang-item-es.lang-item-first.no-translation {
+	  display: none;
+  }
+  
+  li.lang-item.lang-item-6.lang-item-es.lang-item-first {
+	  display: none;
+  }*/
+  
+  .primary-sidebar {
+	  padding: 20px;
+	  padding-top: 0px;
+	  font-family: "Aktiv Grotesk Bold", Arial, Helvetica, sans-serif !important;
+	  overflow: hidden;
+	  display: flex !important;
+	  text-align:right !important;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+	  .white-form .wpb_content_element{
+		  justify-content: flex-end;
+	  }
+	  
+	  .white-form .wpb_content_element .wpb_wrapper {
+		  max-width: 80%; /*Editado por Danilo*/
+	  }
+	  
+	  .white-form .vc_column-inner{
+		  padding-right: 0px !important;
+	  }
+	  .white-form, .footer-footer-info{
+		  padding-top: 10rem;
+		  padding-bottom: 5rem; /*Editado por Danilo*/
+	  }
+	  .footer-footer-info h4, .footer-footer-info .bold-text{
+		  font-size: 23px;
+	  }
+	  .footer-footer-info h2{
+		  font-size: 58px;
+	  }
+  }
+  
+  @media (min-width: 992px) { 
+	  .navbar-collapse{
+		  background: transparent;
+	  }
+	  .navbar{
+		  justify-content: flex-end;
+	  }
+	  header .logo{
+		  top: 30px;
+	  }
+  }
+  
+  /*Editado por Danilo*/
+  
+  @media screen and (max-width: 767px) {
+	  .white-form .wpb_content_element{
+		  justify-content: flex-end;
+	  }
+	  
+	  .white-form .wpb_content_element .wpb_wrapper {
+		  max-width: 75%;
+	  }
+	  
+	  .white-form .vc_column-inner{
+		  padding-right: 0px !important;
+	  }
+	  .white-form, .footer-footer-info{
+		  padding-top: 10rem;
+		  padding-bottom: 5rem;
+	  }
+	  .footer-footer-info h4, .footer-footer-info .bold-text{
+		  font-size: 23px;
+	  }
+	  .footer-footer-info h2{
+		  font-size: 58px;
+	  }
+  }
+  
+  /*Editado por Danilo*/
+  
+  @media screen and (max-width: 425px) {
+	  
+	  .white-form .wpb_content_element .wpb_wrapper {
+		  max-width: 75%;
+	  }
+	  
+	  .w-100.footer-footer-info {
+		  width: 90% !important;
+	  }
+	  
+	  .white-form h1 {
+		  font-size: 3.6rem;
+	  }
+	  
+	  .white-form .wpb_content_element .wpb_wrapper input[type=text], .white-form .wpb_content_element .wpb_wrapper textarea {
+		  font-size: 16px;
+	  }
+	  
+	  .white-form .wpb_content_element .wpb_wrapper input[type=submit] {
+		  font-size: 20px;
+	  }
+	  
+	  .footer-footer-info h2 {
+		  font-size: 2.6em;
+	  }
+	  
+	  .footer-footer-info h4, .footer-footer-info .bold-text {
+		  font-size: 16px;
+	  }
+  }
+  
+  /*Editado por Danilo*/
+  
+  @media screen and (max-width: 320px) {
+	  
+	  .white-form .wpb_content_element .wpb_wrapper {
+		  max-width: 75%;
+	  }
+	  
+	  .w-100.footer-footer-info {
+		  width: 50% !important;
+	  }
+  }
+  
+  @media (max-width:768px){
+	  .whatsapp-movil{
+		  display:inline;
+	  }
+	  .whatsapp-web{
+		  display:none;
+	  }
+  }
+  
+  @media (min-width:768px){
+	  .whatsapp-movil{
+		  display:none;
+	  }
+	  .whatsapp-web{
+		  display:inline;
+	  }
+  }
+  
+  

@@ -73,11 +73,11 @@
 		</g>
 	</svg>
 </div>
-
 </a>
 
 <nav class="navbar navbar-expand-lg navbar-light">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<a href="#" class="navbar-brand"></a>
+	<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
   	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -95,13 +95,14 @@
 				));
 			?>
 		</div>
+
+		<?php if ( is_active_sidebar( 'home_menu_widget' ) ) : ?>
+			<div id="primary-sidebar" class="primary-sidebar widget-area d-none d-lg-block d-xl-blog" role="complementary">
+				<?php dynamic_sidebar( 'home_menu_widget' ); ?>
+			</div><!-- #primary-sidebar -->
+		<?php endif; ?>
 	</div>
 </nav>
-	<?php if ( is_active_sidebar( 'home_menu_widget' ) ) : ?>
-		<div id="primary-sidebar" class="primary-sidebar widget-area d-none d-lg-block d-xl-blog" role="complementary">
-			<?php dynamic_sidebar( 'home_menu_widget' ); ?>
-		</div><!-- #primary-sidebar -->
-	<?php endif; ?>
 </header>
 
 

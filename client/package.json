@@ -13,7 +13,7 @@
   "dependencies": {
     "animejs": "^2.0.2",
     "axios": "^0.16.2",
-    "lazysizes": "^4.0.0-rc3",
+    "lazysizes": "^5.2.1",
     "normalize.css": "^7.0.0",
     "qs": "^6.4.0",
     "react": "^15.6.1",

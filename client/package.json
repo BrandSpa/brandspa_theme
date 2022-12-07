@@ -15,7 +15,7 @@
     "axios": "^0.16.2",
     "lazysizes": "^4.0.0-rc3",
     "normalize.css": "^7.0.0",
-    "qs": "^6.4.0",
+    "qs": "^6.5.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-multiple-render": "1.1.1",
